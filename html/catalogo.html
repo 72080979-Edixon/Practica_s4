@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de eventos</title>
+  <link rel="stylesheet" href="../css/catalogo.css">
+</head>
+<body>
+  <header>
+    <h1>TicketPerú</h1>
+    <p><em>Catálogo de eventos</em></p>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="../html/registro.html">Registro</a>
+      <a href="../html/pago.html">Pago</a>
+      <a href="../html/reventa.html">Reventa</a>
+      <a href="../html/beneficios.html">Beneficios</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Eventos disponibles</h2>
+    <table>
+      <tr><th>Evento</th><th>Fecha</th><th>Lugar</th><th>Precio</th><th></th><th></th></tr>
+      <tr>
+        <td>Shakira World Tour</td><td>15/10/2026</td><td>Lima</td><td>S/350</td>
+        <td><img src="../img/skra.jpg" alt="Shakira World Tour"></td>
+        <td><button onclick="window.location.href='../html/pago.html?evento=Shakira_World_Tour'">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>Grupo 5 Fiesta Norteña</td><td>20/10/2026</td><td>Chiclayo</td><td>S/120</td>
+        <td><img src="../img/gp5.jpg" alt="Grupo 5 Fiesta Norteña"></td>
+        <td><button onclick="window.location.href='../html/pago.html?evento=Grupo5_Fiesta_Norteña'">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>Coldplay Live</td><td>25/10/2026</td><td>Lima</td><td>S/400</td>
+        <td><img src="../img/clpy.jpg" alt="Coldplay Live"></td>
+        <td><button onclick="window.location.href='../html/pago.html?evento=Coldplay_Live'">Comprar</button></td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TicketPerú</p>
+  </footer>
+</body>
+</html>

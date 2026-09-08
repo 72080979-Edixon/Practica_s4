@@ -1,0 +1,125 @@
+/* Estilos base */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1a1a2e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Encabezado dinámico */
+header {
+  background: linear-gradient(90deg, #0d1b3e, #1a2a5e);
+  color: #fff;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeDown 1s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #f2a900;
+  transform: scale(1.1);
+}
+
+/* Formulario */
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 30px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+label {
+  display: block;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #0d1b3e;
+}
+
+input[type="radio"], input[type="number"] {
+  margin-top: 6px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+input[type="number"] {
+  width: 80px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 8px #f2a900;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Botones */
+button {
+  background: #0d1b3e;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  transform: scale(1.08);
+  background: #f2a900;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #0d1b3e;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  margin-top: 50px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  animation: fadeUp 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
